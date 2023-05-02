@@ -3,7 +3,11 @@ module.exports = mongoose => {
     {
       name: String,
       email: String,
-      isAdmin: Boolean
+      password: String,
+      isAdmin: {
+        type: Boolean,
+        default: false
+    }
     },
     { timestamps: true }
   );
